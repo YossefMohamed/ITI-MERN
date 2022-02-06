@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+</head>
+<body>
+        <input type="text" id="name"/>
+        <button id="button">GO</button>
+    <script>
+        let name
+         document.getElementById("name").addEventListener("change" , function(e){
+            name = e.target.value
+        })
+        console.log(name)
+        document.getElementById("button").addEventListener("click", function(e){
+        e.preventDefault();
+        console.log( document.getElementById("name"))
+        location.assign("/"+name)
+
+});
+</script>
+</body>
+</html>
