@@ -71,7 +71,7 @@ db.order.find({"items.quantity": {$lt: 13}})
 ## Retrieve all documents with orders that contain products whose quantity is less than 13 and contain no products whose quantity exceeds 13 ?
 
 ```bash
-db.orders.find({"items": {$not: {$all: [{$elemMatch: {"quantity": {$gte: 13}}}]}}}) // correct
+db.orders.find({"items": {$not: {$all: [{$elemMatch: {"quantity": {$gte: 13}}}]}}})
 ```
 
 ---
