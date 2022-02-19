@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Get Product By Name :</h2>
+    <form action="http://localhost:9003/products" method="get" id="f1">
+        Name: <input type="text" name="name">  <br>
+        
+        <input type="submit" value="Submit">
+        
+    </form>
+
+    <br>
+    <br>
+    <h2>Insert Product :</h2>
+    <form action="http://localhost:9003/insert" method="post" id="f2">
+        Name: <input type="text" name="name">  <br>
+        Price: <input type="text" name="price"> <br>
+        Quantity: <input type="text" name="quantity"> <br>
+
+        <input type="submit" value="Submit">
+        
+    </form>
+
+    <br>
+    <br>
+    <h2>Update Product :</h2>
+    <form action="http://localhost:9003/update" method="post" id="f2">
+        Name for search: <input type="text" name="n">  <br> <br>
+
+        Name: <input type="text" name="name">  <br>
+        Price: <input type="text" name="price"> <br>
+        Quantity: <input type="text" name="quantity"> <br>
+
+        <input type="submit" value="Submit">
+        
+    </form>
+    
+</body>
+</html>
